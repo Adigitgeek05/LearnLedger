@@ -5,7 +5,7 @@ import h3 from '/h3.svg';
 
 export default function Hero() {
     return (
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white z-0">
         <div className="container mx-auto py-8 md:py-16">
           <div className="hidden md:block">
             <div className="text-center mb-12">

@@ -7,6 +7,8 @@ import Faq from './components/Faq'
 import Section from './components/Section'
 import Roadmap from './components/Roadmap'
 import Enroll from './components/Enroll'
+import Reward from './components/Reward'
+import Partner from './components/Partner'
 function App() {
 
 
@@ -14,9 +16,11 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      <Partner />
       <Roadmap />
       <Enroll />
       <Section />
+      <Reward />
       <Faq />
       <Footer />
           </>

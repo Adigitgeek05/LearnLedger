@@ -17,8 +17,8 @@ export default function Navbar() {
   
     return (
       
-        <nav className="bg-white w-full  border-gray-200 px-4 py-3">
-          <div className="max-w-7xl mx-auto flex items-center justify-between max-w-[1500px] px-4">
+        <nav className="bg-white w-full shadow-2xl z-10 shadow-[#9747FF]   border-gray-200 px-4 py-3">
+          <div className=" mx-auto flex items-center justify-between max-w-[1500px] px-4">
             <div className="flex items-center">
               <div className="text-2xl font-bold flex items-center gap-2">
                 <div className="w-[66px] h-[66px] ">
@@ -36,7 +36,7 @@ export default function Navbar() {
                 <div key={item} className="flex items-center">
                   <button
                     onClick={() => handleLinkClick(item.toLowerCase())}
-                    className="text-gray-600 hover:text-[#9747FF] transition-colors font-roboto"
+                    className="text-gray-600 text-lg font-bold hover:text-[#9747FF] transition-colors font-roboto"
                   >
                     {item}
                   </button>
