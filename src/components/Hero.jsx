@@ -9,7 +9,7 @@ export default function Hero() {
         <div className="container mx-auto py-8 md:py-16">
           <div className="hidden md:block">
             <div className="text-center mb-12">
-              <h1 className="text-6xl font-bold text-[#8B5CF6] mb-4">
+              <h1 className="text-6xl font-bold text-[#9747FF] mb-4">
                 Earn While You Learn!
               </h1>
               <p className="text-xl text-gray-600">
@@ -44,7 +44,7 @@ export default function Hero() {
   
           <div className="md:hidden">
             <div className="text-center mb-8 px-4">
-              <h1 className="text-4xl font-bold text-[#8B5CF6] leading-tight">
+              <h1 className="text-4xl font-bold text-[#9747FF] leading-tight">
                 Earn
                 <br />
                 While You
@@ -58,7 +58,7 @@ export default function Hero() {
               </p>
             </div>
   
-            <div className="md:hidden flex flex-col items-center">
+            <div className=" flex flex-col items-center">
             <div className="mb-8 ">
               <div className="relative">
                 <img
@@ -91,14 +91,15 @@ export default function Hero() {
                 </div>
               </div>
   
-            <div className="items-center text-center px-4">
+          
+          </div>
+        </div>
+      </div>
+      <div className="items-center text-center px-4">
               <button className="bg-green-500 text-white px-8 py-3 rounded-full text-lg font-semibold w-full max-w-[280px] mx-auto">
                 Start Learning
               </button>
             </div>
-          </div>
-        </div>
-      </div>
       </div>
       </div>
 

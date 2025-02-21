@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import f1 from '/f1.svg'
+import { CiCirclePlus } from "react-icons/ci";
 export default function Faq() {
     const [activeIndex, setActiveIndex] = useState(null);
   
@@ -38,19 +39,18 @@ export default function Faq() {
   
     return (
       <div className="min-h-screen bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="items-center text-center  flex">
+        <div className=" max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="items-center justify-center text-center  flex">
             
           
-            <h1 className="text-3xl font-inter font-bold text-gray-900 ">
-              Frequently Asked Questions
-            </h1>
-          <div className="flex justify-center items-center ">
-              <img src={f1} alt="" className='w-[195px] h-[192px] '/>
+            <div className=" space-x-2 flex rounded-full border-4  border-[#9747FF] p-4 text-3xl font-inter font-bold text-gray-900 ">
+              <h1>Frequently Asked </h1>
+              <h1 className='text-[#9747FF]'>Questions</h1> 
             </div>
+          
             </div>
-            <div className='bg-black m-auto  '>
-          <div className="bg-[#7F56D9]">
+            <div className=' m-auto  pt-8'>
+          <div className="bg-[#F5EEFF]">
             {faqData.map((faq, index) => (
               <div
                 key={index}
@@ -65,13 +65,14 @@ export default function Faq() {
                   <span className="text-gray-900 font-inter text-lg">
                     {faq.question}
                   </span>
-                  <i
-                    className={`fa-solid ${
-                      activeIndex === index ? "fa-minus" : "fa-plus"
+                  <img 
+                    className={` ${
+                      activeIndex === index ? "fa-minus" : <CiCirclePlus />
+
                     } text-[#8B5CF6] transition-transform duration-300 ${
                       activeIndex === index ? "rotate-180" : "rotate-0"
                     }`}
-                  ></i>
+                  ></img>
                 </button>
                 {activeIndex === index && (
                   <div className="p-4 sm:p-6 pt-0">
